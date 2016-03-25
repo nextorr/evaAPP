@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com https://movistore.blob.core.windows.net http://i.imgur.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src="scripts/jquery-2.2.1.min.js"></script>
+        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+        <!--the following scripts are located at the end of the page-->
+        <!--<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>-->
+        <title>ESCUELA VIRTUAL AMBIENTAL CAR</title>
+    </head>
+    <body>
+        <!--welcome page-->
+        <div data-role="page" id="welcome-page">
+            <div data-role="header">
+                <h1 id="app-title">ESCUELA VIRTUAL AMBIENTAL CAR</h1>
+                <a href="/" class="ui-btn ui-btn-left ui-btn-corner-all ui-icon-home ui-btn-icon-notext" rel="external">Home</a>
+            </div>
+            <div role="main" class="ui-content">
+                <!--place a CAR logo-->
+                <a class="ui-btn ui-shadow ui-corner-all" href="#courses-page">Mis Cursos</a>
+            </div>
+            <div data-role="footer" data-position="fixed">Corporacion Autonoma Regional de Cundinamarca CAR</div>
+        </div>
+        <!--welcome page END OF-->
+        
+        <!-- courses list page -->
+        <div data-role="page" id="courses-page">
+            <div data-role="header">
+                <h1 id="app-title">ESCUELA VIRTUAL AMBIENTAL CAR</h1>
+                <a href="/" class="ui-btn ui-btn-left ui-btn-corner-all ui-icon-home ui-btn-icon-notext" rel="external">Home</a>
+            </div>
+            <div role="main" class="ui-content">
+                <!--poner un logo de la CAR-->
+                <ul data-role="listview">
+                    <li><a href="#sidcar-course-page">
+                        <h2>CURSO DE MANEJO SIDCAR</h2>
+                        <p>Aprenda el funcionamiento del sistema documental de la CAR SIDCAR.</p>
+                        <p>consulte el funcionamiento de las diferentes partes del sistema</p>
+                            <p class="ui-li-aside"><strong>Incompleto</strong></p>
+                    </a></li>
+                    <li><a href="#sae-course-page">
+                        <h2>CURSO DE MANEJO SAE</h2>
+                        <p>aprenda el funcionamiento del sistema de administracion de expedientes SAE.</p>
+                        <p>consulte el funcionamiento de las diferentes partes del sistema</p>
+                            <p class="ui-li-aside"><strong>certificado</strong></p>
+                    </a></li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">Corporacion Autonoma Regional de Cundinamarca CAR</div>
+        </div>
+        <!-- courses list page END OF -->
+
+        <!-- sidcar course page -->
+        <div data-role="page" id="sidcar-course-page">
+            <div data-role="header">
+                <h1 id="app-title">ESCUELA VIRTUAL AMBIENTAL CAR</h1>
+                <a href="#courses-page" class="ui-btn ui-btn-left ui-btn-corner-all ui-icon-home ui-btn-icon-notext" rel="external">Home</a>
+            </div>
+            <div role="main" class="ui-content">
+                <!--poner un logo de la CAR-->
+                <h1>CURSO DE MANEJO DE SIDCAR</h1>
+                <p>Aqui encontrara toda la informacion necesaria para cualquier tipo de tramite permitido dentro 
+                del sistema sidcar.</p>
+                <ul data-role="listview" >
+                    <li data-role="list-divider">
+                        Leccion 1.<br> Manejo basico del sistema
+                        <span class="ui-li-aside">10%</span>
+                    </li>
+                    <li><a href="#lesson-view-page">
+                        <h2>informacion basica</h2>
+                        <p>Aprenda a configurar su informacion personal dentro del sistema</p>
+                    </a></li>
+                    <li>
+                        <a href="#lesson-view-page">
+                            <h2>cambio de contraseña</h2>
+                            <p>Pasos necesarios para cambiar su contraseña, o re establecer una nueva
+                            en caso de olvido</p>
+                        </a>
+                    </li>
+                    <li data-role="list-divider">
+                        Leccion 2.<br> Manejo de la documentacion digital
+                        <span class="ui-li-aside">80%</span>
+                    </li>
+                    <li>
+                        <a href="#lesson-view-page">
+                            <h2>Crear memorandos digitales</h2>
+                            <p>
+                                Aprenda todo el funcionamiento de los memorandos digitales en SIDCAR
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lesson-view-page">
+                            <h2>Copiar contenido desde word</h2>
+                            <p>
+                                SIDCAR incluye un editor de texto, si tiene la informacion en Word siga estos pasos
+                                para pegar esta informacion en el editor de SIDCAR.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lesson-view-page">
+                            <h2>Firmas digitales</h2>
+                            <p>
+                                Como inculir una firma digital dentro de su documento SIDCAR
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">Corporacion Autonoma Regional de Cundinamarca CAR</div>
+        </div>
+        <!-- sidcar course page END OF -->
+
+        <!-- SAE course page -->
+        <div data-role="page" id="sae-course-page">
+            <div data-role="header">
+                <h1 id="app-title">ESCUELA VIRTUAL AMBIENTAL CAR</h1>
+                <a href="#courses-page" class="ui-btn ui-btn-left ui-btn-corner-all ui-icon-home ui-btn-icon-notext" rel="external">Home</a>
+            </div>
+            <div role="main" class="ui-content">
+                <!--poner un logo de la CAR-->
+                <h1>CURSO DE MANEJO DE SAE</h1>
+            </div>
+            <div data-role="footer" data-position="fixed">Corporacion Autonoma Regional de Cundinamarca CAR</div>
+        </div>
+        <!-- SAE course page END OF -->
+
+        <!-- lesson view page -->
+        <div data-role="page" id="lesson-view-page">
+            <div data-role="header">
+                <h1 id="app-title">ESCUELA VIRTUAL AMBIENTAL CAR</h1>
+                <a href="#courses-page" class="ui-btn ui-btn-left ui-btn-corner-all ui-icon-home ui-btn-icon-notext" rel="external">Home</a>
+            </div>
+            <div role="main" class="ui-content">
+                <!--poner un logo de la CAR-->
+                <video id="player" src="https://movistore.blob.core.windows.net/asset-b4bb72bd-d073-440a-a063-4a18e531cf07/max_H264_4500kbps_AAC_und_ch2_128kbps.mp4?sv=2012-02-12&st=2014-04-19T19%3A48%3A58Z&se=2016-04-18T19%3A48%3A58Z&sr=c&si=3192253d-d337-4bcf-a2e0-8d46b352efbe&sig=4QrgAkr%2Bk9amsacx2TxqZbeh5%2BVUwhghWSDc7iuR2QQ%3D"
+                       poster="http://i.imgur.com/UPDzgQL.jpg" preload="none" controls="controls">
+                    Video not supported
+                </video>
+            </div>
+            <div data-role="footer" data-position="fixed">Corporacion Autonoma Regional de Cundinamarca CAR</div>
+        </div>
+        <!-- lesson view page END OF -->
+
+        <!--<div class="app">
+            <p id="deviceready" class="event">Connecting to Device</p>
+        </div>-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </body>
+</html>
